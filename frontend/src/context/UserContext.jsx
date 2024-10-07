@@ -23,7 +23,7 @@ export default function UserContextProvider({ children }) {
     }
 
     return (
-        <UserContextProvider value= {{User, setUser}}>
+        <UserContextProvider value= {{user, setUser}}>
             {children}
         </UserContextProvider>
     )

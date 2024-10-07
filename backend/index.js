@@ -24,7 +24,7 @@ app.use(cors(corsOption));
 const ConnectDB = async() => {
     try {
         await mongoose.connect(process.env.MONGO_URL)
-        console.log("database connection established");
+        console.log("database is connected successfully!");
     }
     catch(err){
         console.log(err);
