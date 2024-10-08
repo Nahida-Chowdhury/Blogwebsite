@@ -8,10 +8,10 @@ export const userContext = createContext({})
 export default function UserContextProvider({ children }) {
     const [user, setUser] = useState(null)
 
-    useEffect((() => {
+    useEffect(() => {
         getUser()
     }, [])
-    )
+    
     const getUser = async () => {
         try {
             const res = await axios.get(URL + " /api/auth/refetch", { withCredentials: true })
